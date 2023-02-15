@@ -1,9 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Clinica {
     String nomeDono;
     String nomeClinica;
     int CNPJ;
     String endereco;
     int codigoClinica;
+
+    List<Cliente> clientes = new ArrayList<>();
+
 
     float imc(float peso,float altura){
         float imcResultado = peso/(altura*altura);
