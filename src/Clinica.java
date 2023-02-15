@@ -18,6 +18,12 @@ public class Clinica {
         this.nomeDono = nomeDono;
     }
 
+    public List<Cliente> getClientes() {
+        for (Cliente cliente : this.clientes) {
+            System.out.println("Nome: " + cliente.getNome());}
+        return clientes;
+    }
+
     public Clinica(String nomeDono, List<Cliente> clientes) {
         this.nomeDono = nomeDono;
         this.clientes = clientes;

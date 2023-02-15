@@ -3,6 +3,12 @@ public class Cliente {
     private float altura;
     private int idade;
 
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
     public Cliente(float peso, float altura, int idade) {
         this.peso = peso;
         this.altura = altura;
