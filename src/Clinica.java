@@ -42,7 +42,18 @@ public class Clinica {
     public float tratamento(int id) {
         if (id < this.clientes.size()) {
             Cliente cliente = this.clientes.get(id);
-            cliente.tratamentoPeso();
+            cliente.tratamentoPeso(5.0f);
+            return cliente.getPeso();
+        } else {
+            System.out.println("Cliente não identificado.");
+            return -1.0f;
+        }
+    }
+
+    public float tratamento(int id,float quilo) {
+        if (id < this.clientes.size()) {
+            Cliente cliente = this.clientes.get(id);
+            cliente.tratamentoPeso(quilo);
             return cliente.getPeso();
         } else {
             System.out.println("Cliente não identificado.");
