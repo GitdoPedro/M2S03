@@ -39,4 +39,15 @@ public class Clinica {
         return imcResultado;
     }
 
+    public float tratamento(int id) {
+        if (id < this.clientes.size()) {
+            Cliente cliente = this.clientes.get(id);
+            cliente.tratamentoPeso();
+            return cliente.getPeso();
+        } else {
+            System.out.println("Cliente não identificado.");
+            return -1.0f;
+        }
+    }
+
 }

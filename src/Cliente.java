@@ -13,4 +13,12 @@ public class Cliente {
         this.peso = peso;
         this.altura = altura;
     }
+
+    public void tratamentoPeso() {
+        this.peso -= 5.0f;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
 }
