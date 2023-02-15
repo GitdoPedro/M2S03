@@ -1,7 +1,7 @@
 public class Cliente {
-    float peso;
-    float altura;
-    int idade;
+    private float peso;
+    private float altura;
+    private int idade;
 
 
 }

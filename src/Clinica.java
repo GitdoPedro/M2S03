@@ -2,16 +2,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Clinica {
-    String nomeDono;
-    String nomeClinica;
-    int CNPJ;
-    String endereco;
-    int codigoClinica;
+    private String nomeDono;
+    private String nomeClinica;
+    private int CNPJ;
+    private String endereco;
+    private int codigoClinica;
 
-    List<Cliente> clientes = new ArrayList<>();
+    private List<Cliente> clientes = new ArrayList<>();
 
+    public void adicionaCliente(Cliente cliente){
+        this.clientes.add(cliente);
+    }
 
-    float imc(float peso,float altura){
+    private float imc(float peso,float altura){
         float imcResultado = peso/(altura*altura);
         if (imcResultado <= 18.5){
             System.out.println("Magreza");
