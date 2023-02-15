@@ -14,7 +14,16 @@ public class Clinica {
         this.clientes.add(cliente);
     }
 
-    private float imc(float peso,float altura){
+    public Clinica(String nomeDono) {
+        this.nomeDono = nomeDono;
+    }
+
+    public Clinica(String nomeDono, List<Cliente> clientes) {
+        this.nomeDono = nomeDono;
+        this.clientes = clientes;
+    }
+
+    private float imc(float peso, float altura){
         float imcResultado = peso/(altura*altura);
         if (imcResultado <= 18.5){
             System.out.println("Magreza");
