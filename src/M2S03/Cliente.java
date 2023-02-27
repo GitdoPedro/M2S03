@@ -1,3 +1,5 @@
+package M2S03;
+
 public class Cliente {
     private float peso;
     private float altura;

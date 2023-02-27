@@ -1,3 +1,5 @@
+package M2S03;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +11,8 @@ public class Clinica {
     private int codigoClinica;
 
     private List<Cliente> clientes = new ArrayList<>();
+
+    
 
     public void adicionaCliente(Cliente cliente){
         this.clientes.add(cliente);
